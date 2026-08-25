@@ -5,7 +5,7 @@ export const site = {
   name: "Joseph's VA's",
   tagline: "Vetted virtual assistants for growing businesses",
   description:
-    "Hire an experienced, fully vetted virtual assistant. Pick a plan, check out, and get matched with an assistant who fits your business.",
+    "Hire an experienced, fully vetted virtual assistant. Tell us what you need and get matched with an assistant who fits your business.",
   // REPLACE_ME: real contact email before launch
   contactEmail: "hello@example.com",
 }
@@ -19,8 +19,6 @@ export type Tier = {
   priceNote?: string
   blurb: string
   features: string[]
-  /** REPLACE_ME: swap in the real Stripe Payment Link for this tier. */
-  checkoutUrl: string
   popular: boolean
 }
 
@@ -38,7 +36,6 @@ export const tiers: Tier[] = [
       "Onboarding call in your first week",
       "Pause or cancel monthly",
     ],
-    checkoutUrl: "https://buy.stripe.com/REPLACE_ME_PART_TIME",
     popular: false,
   },
   {
@@ -55,7 +52,6 @@ export const tiers: Tier[] = [
       "Free replacement if it is not a fit",
       "Pause or cancel monthly",
     ],
-    checkoutUrl: "https://buy.stripe.com/REPLACE_ME_FULL_TIME",
     popular: true,
   },
   {
@@ -72,7 +68,6 @@ export const tiers: Tier[] = [
       "Free replacement if it is not a fit",
       "Pause or cancel monthly",
     ],
-    checkoutUrl: "https://buy.stripe.com/REPLACE_ME_TEAM",
     popular: false,
   },
 ]
@@ -82,21 +77,21 @@ export const tiers: Tier[] = [
 export const stats = [
   { value: "2%", label: "of applicants make it through vetting" },
   { value: "5+ yrs", label: "average assistant experience" },
-  { value: "24 hrs", label: "from checkout to your assistant's first day" },
+  { value: "24 hrs", label: "from sign-off to your assistant's first day" },
 ]
 
 export const steps = [
   {
-    title: "Pick a plan and check out",
-    body: "Choose the hours you need and pay online. No sales call, no back and forth.",
+    title: "Tell us what you need",
+    body: "A short intake form covers your tasks, tools, and the hours you need. Five minutes, no sales call.",
   },
   {
-    title: "Tell us about your business",
-    body: "A short intake covers your tools, tasks, and working hours. We use it to match you, not to sell you.",
+    title: "Get pricing and your match",
+    body: "We reply with pricing for your hours and hand-pick the assistant who fits your business.",
   },
   {
     title: "Meet your assistant",
-    body: "We introduce your matched assistant within 24 hours. If it is not a fit, we replace them free.",
+    body: "We introduce your matched assistant within 24 hours of sign-off. If it is not a fit, we replace them free.",
   },
 ]
 
@@ -163,7 +158,7 @@ export const comparison = {
   rows: [
     {
       label: "Time to start",
-      values: ["Within 24 hours", "6 to 10 weeks", "Days, but unvetted"],
+      values: ["Within 24 hours of sign-off", "6 to 10 weeks", "Days, but unvetted"],
     },
     {
       label: "Vetting",

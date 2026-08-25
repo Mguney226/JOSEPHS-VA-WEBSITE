@@ -1,3 +1,4 @@
+import Link from "next/link"
 import { Button } from "@/components/ui/button"
 
 export function FinalCta() {
@@ -16,7 +17,7 @@ export function FinalCta() {
         </h2>
         <div className="mt-10">
           <Button asChild className="rounded-full px-10">
-            <a href="#pricing">Hire an assistant</a>
+            <Link href="/inquire">Inquire about pricing</Link>
           </Button>
         </div>
       </div>

@@ -6,8 +6,8 @@ export function HowItWorks() {
     <section id="how-it-works" className="mx-auto w-full max-w-screen-2xl scroll-mt-20 px-6 py-24">
       <SectionHeading
         kicker="How it works"
-        title="From checkout to a working assistant."
-        lede="No discovery calls and no proposals. You buy the plan, we do the matching."
+        title="From inquiry to a working assistant."
+        lede="No discovery calls and no proposals. You tell us what you need, we do the matching."
       />
       <ol className="mt-16 grid grid-cols-1 gap-12 md:grid-cols-3">
         {steps.map((step, i) => (

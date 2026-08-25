@@ -1,3 +1,4 @@
+import Link from "next/link"
 import { Button } from "@/components/ui/button"
 
 export function Hero() {
@@ -22,7 +23,7 @@ export function Hero() {
           <div className="max-w-md">
             <div className="flex flex-wrap items-center gap-4">
               <Button asChild className="rounded-full px-8">
-                <a href="#pricing">Hire an assistant</a>
+                <Link href="/inquire">Inquire about pricing</Link>
               </Button>
               <Button asChild variant="ghost" className="rounded-full px-6">
                 <a href="#how-it-works">How it works</a>
@@ -30,13 +31,13 @@ export function Hero() {
             </div>
             <p className="mt-8 text-sm leading-relaxed text-muted-foreground">
               EVERY ASSISTANT IS SCREENED, TESTED, AND REFERENCE-CHECKED
-              BEFORE YOU MEET THEM. PICK A PLAN, HAND OFF THE WORK,
-              AND IT KEEPS GETTING DONE.
+              BEFORE YOU MEET THEM. TELL US WHAT YOU NEED, HAND OFF THE
+              WORK, AND IT KEEPS GETTING DONE.
             </p>
           </div>
 
           <div className="flex items-center gap-2">
-            <span className="text-sm">PICK A PLAN, WE HANDLE THE REST</span>
+            <span className="text-sm">SHARE YOUR NEEDS, WE HANDLE THE REST</span>
             <span className="h-px w-12 bg-foreground" />
           </div>
         </div>

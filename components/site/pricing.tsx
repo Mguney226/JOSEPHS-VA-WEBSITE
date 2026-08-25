@@ -1,3 +1,4 @@
+import Link from "next/link"
 import { Check } from "lucide-react"
 import { tiers } from "@/lib/site-config"
 import { cn } from "@/lib/utils"
@@ -11,7 +12,7 @@ export function Pricing() {
       <div className="mx-auto w-full max-w-screen-2xl scroll-mt-20 px-6 py-24">
         <SectionHeading
           kicker="Pricing"
-          title="Pick your hours. Check out. Done."
+          title="Pick your hours. Tell us what you need."
           lede="Every plan is monthly with no long-term contract. If your assistant is not a fit, we replace them free."
         />
         <div className="mt-16 grid grid-cols-1 gap-6 lg:grid-cols-3">
@@ -50,7 +51,7 @@ export function Pricing() {
                 variant={tier.popular ? "default" : "outline"}
                 className="mt-8 w-full rounded-full"
               >
-                <a href={tier.checkoutUrl}>Hire {tier.name.toLowerCase()}</a>
+                <Link href={`/inquire?plan=${tier.id}`}>Inquire about pricing</Link>
               </Button>
             </div>
           ))}
